@@ -1,0 +1,535 @@
+Efinity Synthesis report for project edb_top
+Version: 2025.2.288.3.8
+Generated at: Apr 22, 2026 23:51:07
+Copyright (C) 2013 - 2025  All rights reserved.
+
+Top-level Entity Name : edb_top
+
+family : Titanium
+device : TJ375N529
+project : edb_top
+root : edb_top
+I,include : D:/Efinity/2ChMIPICSI_2ChMIPIDSI_Demo_Test
+I,include : D:/Efinity/2ChMIPICSI_2ChMIPIDSI_Demo_Test/ip/csi_rx_controller
+I,include : D:/Efinity/2ChMIPICSI_2ChMIPIDSI_Demo_Test/ip/dsi_tx
+insert-ios : 0
+insert-gclk : 0
+max-carry-cascade : 960
+max-dsp-cascade : 48
+max_mult : -1
+max_ram : -1
+mode : speed
+num_srl : -1
+disable_global_ctrl : 0
+gen-mark-debug-json : 0
+keep-gclk-in-module : 1
+mult-decomp-retime : 0
+output-dir : D:/Efinity/2ChMIPICSI_2ChMIPIDSI_Demo_Test/outflow
+project : edb_top
+root : edb_top
+work-dir : D:/Efinity/2ChMIPICSI_2ChMIPIDSI_Demo_Test/work_dbg
+write-postmap-module : D:/Efinity/2ChMIPICSI_2ChMIPIDSI_Demo_Test/work_dbg/debug_top.post.vdb
+
+File List:
+
+D:/Efinity/2ChMIPICSI_2ChMIPIDSI_Demo_Test/work_dbg/debug_top.v
+
+### ### Report Section Start ### ###
+
+"MEM|SYN-0677" : ... Memory 'ram' is not initialized, assuming empty initial contents. (D:/Efinity/2ChMIPICSI_2ChMIPIDSI_Demo_Test/work_dbg/debug_top.v:601)
+"MEM|SYN-0677" : ... Memory 'ram' is not initialized, assuming empty initial contents. (D:/Efinity/2ChMIPICSI_2ChMIPIDSI_Demo_Test/work_dbg/debug_top.v:601)
+
+### ### EFX_FF CE enables (begin) ### ### ###
+Total number of enable signals: 104
+Total number of FFs with enable signals: 1820
+CE signal <ceg_net2>, number of controlling flip flops: 6
+CE signal <la2/n1792>, number of controlling flip flops: 22
+CE signal <ceg_net5>, number of controlling flip flops: 3
+CE signal <la2/n23670>, number of controlling flip flops: 21
+CE signal <ceg_net8>, number of controlling flip flops: 64
+CE signal <la2/regsel_ld_en>, number of controlling flip flops: 13
+CE signal <la2/n2648>, number of controlling flip flops: 3
+CE signal <la2/n1659>, number of controlling flip flops: 64
+CE signal <la2/word_ct_en>, number of controlling flip flops: 16
+CE signal <la2/op_reg_en>, number of controlling flip flops: 4
+CE signal <la2/n3481>, number of controlling flip flops: 3
+CE signal <la2/n4314>, number of controlling flip flops: 3
+CE signal <la2/n5147>, number of controlling flip flops: 3
+CE signal <la2/n5980>, number of controlling flip flops: 3
+CE signal <la2/n6813>, number of controlling flip flops: 3
+CE signal <la2/n7646>, number of controlling flip flops: 3
+CE signal <la2/n8479>, number of controlling flip flops: 3
+CE signal <la2/n9312>, number of controlling flip flops: 3
+CE signal <ceg_net11>, number of controlling flip flops: 1
+CE signal <la2/la_biu_inst/n2087>, number of controlling flip flops: 11
+CE signal <la2/la_biu_inst/fifo_with_read_inst/is_last_data>, number of controlling flip flops: 11
+CE signal <la2/n10145>, number of controlling flip flops: 3
+CE signal <la2/la_biu_inst/data_o_en>, number of controlling flip flops: 48
+CE signal <la2/n10978>, number of controlling flip flops: 3
+CE signal <la2/n11867>, number of controlling flip flops: 3
+CE signal <la2/n11882>, number of controlling flip flops: 8
+CE signal <la2/n12080>, number of controlling flip flops: 8
+CE signal <la2/n12764>, number of controlling flip flops: 3
+CE signal <la2/n12779>, number of controlling flip flops: 8
+CE signal <la2/n12977>, number of controlling flip flops: 8
+CE signal <la2/n13605>, number of controlling flip flops: 3
+CE signal <la2/la_biu_inst/n390>, number of controlling flip flops: 12
+CE signal <la2/n14438>, number of controlling flip flops: 3
+CE signal <la2/la_biu_inst/fifo_push>, number of controlling flip flops: 11
+CE signal <la2/n15271>, number of controlling flip flops: 3
+CE signal <~ceg_net74>, number of controlling flip flops: 24
+CE signal <la2/n16160>, number of controlling flip flops: 3
+CE signal <la2/n16175>, number of controlling flip flops: 8
+CE signal <la2/n16373>, number of controlling flip flops: 8
+CE signal <la2/n17057>, number of controlling flip flops: 3
+CE signal <la2/n17072>, number of controlling flip flops: 8
+CE signal <la2/n17270>, number of controlling flip flops: 8
+CE signal <la2/addr_ct_en>, number of controlling flip flops: 26
+CE signal <la2/n1142>, number of controlling flip flops: 64
+CE signal <ceg_net75>, number of controlling flip flops: 1
+CE signal <la2/tu_trigger>, number of controlling flip flops: 64
+CE signal <la2/trigger_skipper_n/equal_6/n127>, number of controlling flip flops: 1
+CE signal <ceg_net19>, number of controlling flip flops: 32
+CE signal <la1/n1803>, number of controlling flip flops: 22
+CE signal <ceg_net26>, number of controlling flip flops: 6
+CE signal <ceg_net29>, number of controlling flip flops: 3
+CE signal <la1/la_biu_inst/n2087>, number of controlling flip flops: 11
+CE signal <la1/la_biu_inst/fifo_with_read_inst/is_last_data>, number of controlling flip flops: 11
+CE signal <la1/n11631>, number of controlling flip flops: 21
+CE signal <ceg_net32>, number of controlling flip flops: 64
+CE signal <la1/regsel_ld_en>, number of controlling flip flops: 13
+CE signal <la1/n2659>, number of controlling flip flops: 3
+CE signal <la1/n1670>, number of controlling flip flops: 64
+CE signal <la1/word_ct_en>, number of controlling flip flops: 16
+CE signal <la1/la_biu_inst/data_o_en>, number of controlling flip flops: 48
+CE signal <la1/op_reg_en>, number of controlling flip flops: 4
+CE signal <ceg_net35>, number of controlling flip flops: 1
+CE signal <la1/n3492>, number of controlling flip flops: 3
+CE signal <la1/n4325>, number of controlling flip flops: 3
+CE signal <la1/la_biu_inst/n390>, number of controlling flip flops: 12
+CE signal <la1/n5158>, number of controlling flip flops: 3
+CE signal <la1/la_biu_inst/fifo_push>, number of controlling flip flops: 11
+CE signal <la1/n5991>, number of controlling flip flops: 3
+CE signal <ceg_net76>, number of controlling flip flops: 24
+CE signal <la1/n7104>, number of controlling flip flops: 3
+CE signal <la1/n7119>, number of controlling flip flops: 40
+CE signal <la1/addr_ct_en>, number of controlling flip flops: 26
+CE signal <la1/n7317>, number of controlling flip flops: 40
+CE signal <la1/n7977>, number of controlling flip flops: 3
+CE signal <la1/n1153>, number of controlling flip flops: 64
+CE signal <ceg_net79>, number of controlling flip flops: 1
+CE signal <la1/tu_trigger>, number of controlling flip flops: 64
+CE signal <la1/trigger_skipper_n/equal_6/n127>, number of controlling flip flops: 1
+CE signal <ceg_net43>, number of controlling flip flops: 32
+CE signal <la0/n1764>, number of controlling flip flops: 22
+CE signal <ceg_net50>, number of controlling flip flops: 6
+CE signal <ceg_net53>, number of controlling flip flops: 3
+CE signal <la0/n4342>, number of controlling flip flops: 21
+CE signal <ceg_net56>, number of controlling flip flops: 64
+CE signal <la0/regsel_ld_en>, number of controlling flip flops: 13
+CE signal <la0/n2620>, number of controlling flip flops: 3
+CE signal <la0/n1631>, number of controlling flip flops: 64
+CE signal <la0/la_biu_inst/axi_fsm_state[1]>, number of controlling flip flops: 3
+CE signal <la0/la_biu_inst/fifo_push>, number of controlling flip flops: 11
+CE signal <~ceg_net82>, number of controlling flip flops: 24
+CE signal <la0/word_ct_en>, number of controlling flip flops: 16
+CE signal <la0/la_biu_inst/n2078>, number of controlling flip flops: 11
+CE signal <la0/la_biu_inst/n345>, number of controlling flip flops: 12
+CE signal <la0/op_reg_en>, number of controlling flip flops: 4
+CE signal <la0/la_biu_inst/fifo_with_read_inst/is_last_data>, number of controlling flip flops: 11
+CE signal <la0/addr_ct_en>, number of controlling flip flops: 26
+CE signal <la0/n1114>, number of controlling flip flops: 64
+CE signal <ceg_net62>, number of controlling flip flops: 1
+CE signal <la0/tu_trigger>, number of controlling flip flops: 64
+CE signal <la0/trigger_skipper_n/equal_6/n127>, number of controlling flip flops: 1
+CE signal <ceg_net67>, number of controlling flip flops: 32
+CE signal <debug_hub_inst/n96>, number of controlling flip flops: 82
+CE signal <debug_hub_inst/n265>, number of controlling flip flops: 1
+CE signal <debug_hub_inst/n267>, number of controlling flip flops: 4
+### ### EFX_FF CE enables (end) ### ### ###
+
+### ### EFX_FF SR set/reset (begin) ### ### ###
+Total number of set/reset signals: 26
+Total number of FFs with set/reset signals: 1886
+SR signal <edb_soft_reset>, number of controlling flip flops: 1290
+SR signal <la2/n2635>, number of controlling flip flops: 2
+SR signal <la2/la_resetn>, number of controlling flip flops: 60
+SR signal <la2/la_biu_inst/fifo_with_read_inst/n909>, number of controlling flip flops: 34
+SR signal <la2/la_biu_inst/fifo_rstn>, number of controlling flip flops: 23
+SR signal <la2/la_biu_inst/n2042>, number of controlling flip flops: 1
+SR signal <la2/n24452>, number of controlling flip flops: 1
+SR signal <la2/ts_resetn>, number of controlling flip flops: 64
+SR signal <la2/trigger_skipper_n/n469>, number of controlling flip flops: 1
+SR signal <la1/la_resetn>, number of controlling flip flops: 60
+SR signal <la1/la_biu_inst/fifo_with_read_inst/n909>, number of controlling flip flops: 34
+SR signal <la1/la_biu_inst/fifo_rstn>, number of controlling flip flops: 23
+SR signal <la1/n2646>, number of controlling flip flops: 2
+SR signal <la1/la_biu_inst/n2042>, number of controlling flip flops: 1
+SR signal <la1/n12184>, number of controlling flip flops: 1
+SR signal <la1/ts_resetn>, number of controlling flip flops: 64
+SR signal <la1/trigger_skipper_n/n469>, number of controlling flip flops: 1
+SR signal <la0/la_resetn>, number of controlling flip flops: 15
+SR signal <la0/la_biu_inst/n2092>, number of controlling flip flops: 1
+SR signal <la0/n2607>, number of controlling flip flops: 2
+SR signal <la0/la_biu_inst/fifo_with_read_inst/n684>, number of controlling flip flops: 34
+SR signal <la0/la_biu_inst/fifo_rstn>, number of controlling flip flops: 23
+SR signal <la0/n4784>, number of controlling flip flops: 1
+SR signal <la0/ts_resetn>, number of controlling flip flops: 64
+SR signal <la0/trigger_skipper_n/n469>, number of controlling flip flops: 1
+SR signal <bscan_RESET>, number of controlling flip flops: 83
+### ### EFX_FF SR set/reset (end) ### ### ###
+
+### ### Memory Trimming Report (begin) ### ### ### 
+Memory instance 'la2/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$h12' WE[1] tied off to 0.
+Memory instance 'la2/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$i1' WE[1] tied off to 0.
+Memory instance 'la2/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$c12' WE[1] tied off to 0.
+Memory instance 'la2/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$g12' WE[1] tied off to 0.
+Memory instance 'la2/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$f12' WE[1] tied off to 0.
+Memory instance 'la2/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$e12' WE[1] tied off to 0.
+Memory instance 'la2/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$2' WE[1] tied off to 0.
+Memory instance 'la2/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$d12' WE[1] tied off to 0.
+Memory instance 'la2/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$b12' WE[1] tied off to 0.
+Memory instance 'la2/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$12' WE[1] tied off to 0.
+Memory instance 'la1/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$b12' WE[1] tied off to 0.
+Memory instance 'la1/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$2' WE[1] tied off to 0.
+Memory instance 'la1/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$i1' WE[1] tied off to 0.
+Memory instance 'la1/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$12' WE[1] tied off to 0.
+Memory instance 'la1/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$c12' WE[1] tied off to 0.
+Memory instance 'la1/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$d12' WE[1] tied off to 0.
+Memory instance 'la1/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$e12' WE[1] tied off to 0.
+Memory instance 'la1/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$f12' WE[1] tied off to 0.
+Memory instance 'la1/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$g12' WE[1] tied off to 0.
+Memory instance 'la1/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$h12' WE[1] tied off to 0.
+Memory instance 'la0/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram' WE[1] tied off to 0.
+### ### Memory Trimming Report (end) ### ### ### 
+
+### ### Sequential Elements Trimming Report (begin) ### ### ### 
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "D:/Efinity/2ChMIPICSI_2ChMIPIDSI_Demo_Test/work_dbg/debug_top.v (5782)" removed instance : la2/GEN_PROBE[15].genblk7.genblk3.trigger_cu/i25
+@ "D:/Efinity/2ChMIPICSI_2ChMIPIDSI_Demo_Test/work_dbg/debug_top.v (5721)" representative instance : la2/GEN_PROBE[15].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "D:/Efinity/2ChMIPICSI_2ChMIPIDSI_Demo_Test/work_dbg/debug_top.v (5721)" removed instance : la2/GEN_PROBE[14].genblk7.genblk3.trigger_cu/i6
+@ "D:/Efinity/2ChMIPICSI_2ChMIPIDSI_Demo_Test/work_dbg/debug_top.v (5721)" representative instance : la2/GEN_PROBE[15].genblk7.genblk3.trigger_cu/i6
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "D:/Efinity/2ChMIPICSI_2ChMIPIDSI_Demo_Test/work_dbg/debug_top.v (5782)" removed instance : la2/GEN_PROBE[14].genblk7.genblk3.trigger_cu/i25
+@ "D:/Efinity/2ChMIPICSI_2ChMIPIDSI_Demo_Test/work_dbg/debug_top.v (5721)" representative instance : la2/GEN_PROBE[14].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "D:/Efinity/2ChMIPICSI_2ChMIPIDSI_Demo_Test/work_dbg/debug_top.v (5721)" removed instance : la2/GEN_PROBE[13].genblk7.genblk3.trigger_cu/i6
+@ "D:/Efinity/2ChMIPICSI_2ChMIPIDSI_Demo_Test/work_dbg/debug_top.v (5721)" representative instance : la2/GEN_PROBE[15].genblk7.genblk3.trigger_cu/i6
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "D:/Efinity/2ChMIPICSI_2ChMIPIDSI_Demo_Test/work_dbg/debug_top.v (5782)" removed instance : la2/GEN_PROBE[13].genblk7.genblk3.trigger_cu/i25
+@ "D:/Efinity/2ChMIPICSI_2ChMIPIDSI_Demo_Test/work_dbg/debug_top.v (5721)" representative instance : la2/GEN_PROBE[13].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "D:/Efinity/2ChMIPICSI_2ChMIPIDSI_Demo_Test/work_dbg/debug_top.v (5721)" removed instance : la2/GEN_PROBE[10].genblk7.genblk3.trigger_cu/i6
+@ "D:/Efinity/2ChMIPICSI_2ChMIPIDSI_Demo_Test/work_dbg/debug_top.v (5721)" representative instance : la2/GEN_PROBE[15].genblk7.genblk3.trigger_cu/i6
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "D:/Efinity/2ChMIPICSI_2ChMIPIDSI_Demo_Test/work_dbg/debug_top.v (5782)" removed instance : la2/GEN_PROBE[10].genblk7.genblk3.trigger_cu/i25
+@ "D:/Efinity/2ChMIPICSI_2ChMIPIDSI_Demo_Test/work_dbg/debug_top.v (5721)" representative instance : la2/GEN_PROBE[10].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "D:/Efinity/2ChMIPICSI_2ChMIPIDSI_Demo_Test/work_dbg/debug_top.v (5721)" removed instance : la2/GEN_PROBE[9].genblk7.genblk3.trigger_cu/i6
+@ "D:/Efinity/2ChMIPICSI_2ChMIPIDSI_Demo_Test/work_dbg/debug_top.v (5721)" representative instance : la2/GEN_PROBE[15].genblk7.genblk3.trigger_cu/i6
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "D:/Efinity/2ChMIPICSI_2ChMIPIDSI_Demo_Test/work_dbg/debug_top.v (5782)" removed instance : la2/GEN_PROBE[9].genblk7.genblk3.trigger_cu/i25
+@ "D:/Efinity/2ChMIPICSI_2ChMIPIDSI_Demo_Test/work_dbg/debug_top.v (5721)" representative instance : la2/GEN_PROBE[9].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "D:/Efinity/2ChMIPICSI_2ChMIPIDSI_Demo_Test/work_dbg/debug_top.v (5721)" removed instance : la2/GEN_PROBE[8].genblk7.genblk3.trigger_cu/i6
+@ "D:/Efinity/2ChMIPICSI_2ChMIPIDSI_Demo_Test/work_dbg/debug_top.v (5721)" representative instance : la2/GEN_PROBE[15].genblk7.genblk3.trigger_cu/i6
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "D:/Efinity/2ChMIPICSI_2ChMIPIDSI_Demo_Test/work_dbg/debug_top.v (5782)" removed instance : la2/GEN_PROBE[8].genblk7.genblk3.trigger_cu/i25
+@ "D:/Efinity/2ChMIPICSI_2ChMIPIDSI_Demo_Test/work_dbg/debug_top.v (5721)" representative instance : la2/GEN_PROBE[8].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "D:/Efinity/2ChMIPICSI_2ChMIPIDSI_Demo_Test/work_dbg/debug_top.v (5721)" removed instance : la2/GEN_PROBE[7].genblk7.genblk3.trigger_cu/i6
+@ "D:/Efinity/2ChMIPICSI_2ChMIPIDSI_Demo_Test/work_dbg/debug_top.v (5721)" representative instance : la2/GEN_PROBE[15].genblk7.genblk3.trigger_cu/i6
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "D:/Efinity/2ChMIPICSI_2ChMIPIDSI_Demo_Test/work_dbg/debug_top.v (5782)" removed instance : la2/GEN_PROBE[7].genblk7.genblk3.trigger_cu/i25
+@ "D:/Efinity/2ChMIPICSI_2ChMIPIDSI_Demo_Test/work_dbg/debug_top.v (5721)" representative instance : la2/GEN_PROBE[7].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "D:/Efinity/2ChMIPICSI_2ChMIPIDSI_Demo_Test/work_dbg/debug_top.v (5721)" removed instance : la2/GEN_PROBE[6].genblk7.genblk3.trigger_cu/i6
+@ "D:/Efinity/2ChMIPICSI_2ChMIPIDSI_Demo_Test/work_dbg/debug_top.v (5721)" representative instance : la2/GEN_PROBE[15].genblk7.genblk3.trigger_cu/i6
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "D:/Efinity/2ChMIPICSI_2ChMIPIDSI_Demo_Test/work_dbg/debug_top.v (5782)" removed instance : la2/GEN_PROBE[6].genblk7.genblk3.trigger_cu/i25
+@ "D:/Efinity/2ChMIPICSI_2ChMIPIDSI_Demo_Test/work_dbg/debug_top.v (5721)" representative instance : la2/GEN_PROBE[6].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "D:/Efinity/2ChMIPICSI_2ChMIPIDSI_Demo_Test/work_dbg/debug_top.v (5721)" removed instance : la2/GEN_PROBE[5].genblk7.genblk3.trigger_cu/i6
+@ "D:/Efinity/2ChMIPICSI_2ChMIPIDSI_Demo_Test/work_dbg/debug_top.v (5721)" representative instance : la2/GEN_PROBE[15].genblk7.genblk3.trigger_cu/i6
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "D:/Efinity/2ChMIPICSI_2ChMIPIDSI_Demo_Test/work_dbg/debug_top.v (5782)" removed instance : la2/GEN_PROBE[5].genblk7.genblk3.trigger_cu/i25
+@ "D:/Efinity/2ChMIPICSI_2ChMIPIDSI_Demo_Test/work_dbg/debug_top.v (5721)" representative instance : la2/GEN_PROBE[5].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "D:/Efinity/2ChMIPICSI_2ChMIPIDSI_Demo_Test/work_dbg/debug_top.v (5721)" removed instance : la2/GEN_PROBE[4].genblk7.genblk3.trigger_cu/i6
+@ "D:/Efinity/2ChMIPICSI_2ChMIPIDSI_Demo_Test/work_dbg/debug_top.v (5721)" representative instance : la2/GEN_PROBE[15].genblk7.genblk3.trigger_cu/i6
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "D:/Efinity/2ChMIPICSI_2ChMIPIDSI_Demo_Test/work_dbg/debug_top.v (5782)" removed instance : la2/GEN_PROBE[4].genblk7.genblk3.trigger_cu/i25
+@ "D:/Efinity/2ChMIPICSI_2ChMIPIDSI_Demo_Test/work_dbg/debug_top.v (5721)" representative instance : la2/GEN_PROBE[4].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "D:/Efinity/2ChMIPICSI_2ChMIPIDSI_Demo_Test/work_dbg/debug_top.v (5721)" removed instance : la2/GEN_PROBE[3].genblk7.genblk3.trigger_cu/i6
+@ "D:/Efinity/2ChMIPICSI_2ChMIPIDSI_Demo_Test/work_dbg/debug_top.v (5721)" representative instance : la2/GEN_PROBE[15].genblk7.genblk3.trigger_cu/i6
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "D:/Efinity/2ChMIPICSI_2ChMIPIDSI_Demo_Test/work_dbg/debug_top.v (5782)" removed instance : la2/GEN_PROBE[3].genblk7.genblk3.trigger_cu/i25
+@ "D:/Efinity/2ChMIPICSI_2ChMIPIDSI_Demo_Test/work_dbg/debug_top.v (5721)" representative instance : la2/GEN_PROBE[3].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "D:/Efinity/2ChMIPICSI_2ChMIPIDSI_Demo_Test/work_dbg/debug_top.v (5721)" removed instance : la2/GEN_PROBE[2].genblk7.genblk3.trigger_cu/i6
+@ "D:/Efinity/2ChMIPICSI_2ChMIPIDSI_Demo_Test/work_dbg/debug_top.v (5721)" representative instance : la2/GEN_PROBE[15].genblk7.genblk3.trigger_cu/i6
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "D:/Efinity/2ChMIPICSI_2ChMIPIDSI_Demo_Test/work_dbg/debug_top.v (5782)" removed instance : la2/GEN_PROBE[2].genblk7.genblk3.trigger_cu/i25
+@ "D:/Efinity/2ChMIPICSI_2ChMIPIDSI_Demo_Test/work_dbg/debug_top.v (5721)" representative instance : la2/GEN_PROBE[2].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "D:/Efinity/2ChMIPICSI_2ChMIPIDSI_Demo_Test/work_dbg/debug_top.v (5721)" removed instance : la2/GEN_PROBE[1].genblk7.genblk3.trigger_cu/i6
+@ "D:/Efinity/2ChMIPICSI_2ChMIPIDSI_Demo_Test/work_dbg/debug_top.v (5721)" representative instance : la2/GEN_PROBE[15].genblk7.genblk3.trigger_cu/i6
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "D:/Efinity/2ChMIPICSI_2ChMIPIDSI_Demo_Test/work_dbg/debug_top.v (5782)" removed instance : la2/GEN_PROBE[1].genblk7.genblk3.trigger_cu/i25
+@ "D:/Efinity/2ChMIPICSI_2ChMIPIDSI_Demo_Test/work_dbg/debug_top.v (5721)" representative instance : la2/GEN_PROBE[1].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "D:/Efinity/2ChMIPICSI_2ChMIPIDSI_Demo_Test/work_dbg/debug_top.v (5721)" removed instance : la2/GEN_PROBE[0].genblk7.genblk3.trigger_cu/i6
+@ "D:/Efinity/2ChMIPICSI_2ChMIPIDSI_Demo_Test/work_dbg/debug_top.v (5721)" representative instance : la2/GEN_PROBE[15].genblk7.genblk3.trigger_cu/i6
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "D:/Efinity/2ChMIPICSI_2ChMIPIDSI_Demo_Test/work_dbg/debug_top.v (5782)" removed instance : la2/GEN_PROBE[0].genblk7.genblk3.trigger_cu/i25
+@ "D:/Efinity/2ChMIPICSI_2ChMIPIDSI_Demo_Test/work_dbg/debug_top.v (5721)" representative instance : la2/GEN_PROBE[0].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "D:/Efinity/2ChMIPICSI_2ChMIPIDSI_Demo_Test/work_dbg/debug_top.v (5782)" removed instance : la1/GEN_PROBE[6].genblk7.genblk3.trigger_cu/i25
+@ "D:/Efinity/2ChMIPICSI_2ChMIPIDSI_Demo_Test/work_dbg/debug_top.v (5721)" representative instance : la1/GEN_PROBE[6].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "D:/Efinity/2ChMIPICSI_2ChMIPIDSI_Demo_Test/work_dbg/debug_top.v (5721)" removed instance : la1/GEN_PROBE[4].genblk7.genblk3.trigger_cu/i6
+@ "D:/Efinity/2ChMIPICSI_2ChMIPIDSI_Demo_Test/work_dbg/debug_top.v (5721)" representative instance : la1/GEN_PROBE[6].genblk7.genblk3.trigger_cu/i6
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "D:/Efinity/2ChMIPICSI_2ChMIPIDSI_Demo_Test/work_dbg/debug_top.v (5782)" removed instance : la1/GEN_PROBE[4].genblk7.genblk3.trigger_cu/i25
+@ "D:/Efinity/2ChMIPICSI_2ChMIPIDSI_Demo_Test/work_dbg/debug_top.v (5721)" representative instance : la1/GEN_PROBE[4].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "D:/Efinity/2ChMIPICSI_2ChMIPIDSI_Demo_Test/work_dbg/debug_top.v (5721)" removed instance : la1/GEN_PROBE[3].genblk7.genblk3.trigger_cu/i6
+@ "D:/Efinity/2ChMIPICSI_2ChMIPIDSI_Demo_Test/work_dbg/debug_top.v (5721)" representative instance : la1/GEN_PROBE[6].genblk7.genblk3.trigger_cu/i6
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "D:/Efinity/2ChMIPICSI_2ChMIPIDSI_Demo_Test/work_dbg/debug_top.v (5782)" removed instance : la1/GEN_PROBE[3].genblk7.genblk3.trigger_cu/i25
+@ "D:/Efinity/2ChMIPICSI_2ChMIPIDSI_Demo_Test/work_dbg/debug_top.v (5721)" representative instance : la1/GEN_PROBE[3].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "D:/Efinity/2ChMIPICSI_2ChMIPIDSI_Demo_Test/work_dbg/debug_top.v (5721)" removed instance : la1/GEN_PROBE[2].genblk7.genblk3.trigger_cu/i6
+@ "D:/Efinity/2ChMIPICSI_2ChMIPIDSI_Demo_Test/work_dbg/debug_top.v (5721)" representative instance : la1/GEN_PROBE[6].genblk7.genblk3.trigger_cu/i6
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "D:/Efinity/2ChMIPICSI_2ChMIPIDSI_Demo_Test/work_dbg/debug_top.v (5782)" removed instance : la1/GEN_PROBE[2].genblk7.genblk3.trigger_cu/i25
+@ "D:/Efinity/2ChMIPICSI_2ChMIPIDSI_Demo_Test/work_dbg/debug_top.v (5721)" representative instance : la1/GEN_PROBE[2].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "D:/Efinity/2ChMIPICSI_2ChMIPIDSI_Demo_Test/work_dbg/debug_top.v (5721)" removed instance : la1/GEN_PROBE[1].genblk7.genblk3.trigger_cu/i6
+@ "D:/Efinity/2ChMIPICSI_2ChMIPIDSI_Demo_Test/work_dbg/debug_top.v (5721)" representative instance : la1/GEN_PROBE[6].genblk7.genblk3.trigger_cu/i6
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "D:/Efinity/2ChMIPICSI_2ChMIPIDSI_Demo_Test/work_dbg/debug_top.v (5782)" removed instance : la1/GEN_PROBE[1].genblk7.genblk3.trigger_cu/i25
+@ "D:/Efinity/2ChMIPICSI_2ChMIPIDSI_Demo_Test/work_dbg/debug_top.v (5721)" representative instance : la1/GEN_PROBE[1].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "D:/Efinity/2ChMIPICSI_2ChMIPIDSI_Demo_Test/work_dbg/debug_top.v (5721)" removed instance : la1/GEN_PROBE[0].genblk7.genblk3.trigger_cu/i6
+@ "D:/Efinity/2ChMIPICSI_2ChMIPIDSI_Demo_Test/work_dbg/debug_top.v (5721)" representative instance : la1/GEN_PROBE[6].genblk7.genblk3.trigger_cu/i6
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "D:/Efinity/2ChMIPICSI_2ChMIPIDSI_Demo_Test/work_dbg/debug_top.v (5782)" removed instance : la1/GEN_PROBE[0].genblk7.genblk3.trigger_cu/i25
+@ "D:/Efinity/2ChMIPICSI_2ChMIPIDSI_Demo_Test/work_dbg/debug_top.v (5721)" representative instance : la1/GEN_PROBE[0].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "D:/Efinity/2ChMIPICSI_2ChMIPIDSI_Demo_Test/work_dbg/debug_top.v (5782)" removed instance : la0/GEN_PROBE[0].genblk7.genblk3.trigger_cu/i25
+@ "D:/Efinity/2ChMIPICSI_2ChMIPIDSI_Demo_Test/work_dbg/debug_top.v (5721)" representative instance : la0/GEN_PROBE[0].genblk7.genblk3.trigger_cu/i5
+FF Output: la2/data_from_biu[47](=0)
+FF Output: la2/data_from_biu[48](=0)
+FF Output: la2/data_from_biu[49](=0)
+FF Output: la2/data_from_biu[50](=0)
+FF Output: la2/data_from_biu[51](=0)
+FF Output: la2/data_from_biu[52](=0)
+FF Output: la2/data_from_biu[53](=0)
+FF Output: la2/data_from_biu[54](=0)
+FF Output: la2/data_from_biu[55](=0)
+FF Output: la2/data_from_biu[56](=0)
+FF Output: la2/data_from_biu[57](=0)
+FF Output: la2/data_from_biu[58](=0)
+FF Output: la2/data_from_biu[59](=0)
+FF Output: la2/data_from_biu[60](=0)
+FF Output: la2/data_from_biu[61](=0)
+FF Output: la2/data_from_biu[62](=0)
+FF Output: la2/data_from_biu[63](=0)
+FF Output: la1/data_from_biu[47](=0)
+FF Output: la1/data_from_biu[48](=0)
+FF Output: la1/data_from_biu[49](=0)
+FF Output: la1/data_from_biu[50](=0)
+FF Output: la1/data_from_biu[51](=0)
+FF Output: la1/data_from_biu[52](=0)
+FF Output: la1/data_from_biu[53](=0)
+FF Output: la1/data_from_biu[54](=0)
+FF Output: la1/data_from_biu[55](=0)
+FF Output: la1/data_from_biu[56](=0)
+FF Output: la1/data_from_biu[57](=0)
+FF Output: la1/data_from_biu[58](=0)
+FF Output: la1/data_from_biu[59](=0)
+FF Output: la1/data_from_biu[60](=0)
+FF Output: la1/data_from_biu[61](=0)
+FF Output: la1/data_from_biu[62](=0)
+FF Output: la1/data_from_biu[63](=0)
+FF Output: la0/data_from_biu[2](=0)
+FF Output: la0/data_from_biu[3](=0)
+FF Output: la0/data_from_biu[4](=0)
+FF Output: la0/data_from_biu[5](=0)
+FF Output: la0/data_from_biu[6](=0)
+FF Output: la0/data_from_biu[7](=0)
+FF Output: la0/data_from_biu[8](=0)
+FF Output: la0/data_from_biu[9](=0)
+FF Output: la0/data_from_biu[10](=0)
+FF Output: la0/data_from_biu[11](=0)
+FF Output: la0/data_from_biu[12](=0)
+FF Output: la0/data_from_biu[13](=0)
+FF Output: la0/data_from_biu[14](=0)
+FF Output: la0/data_from_biu[15](=0)
+FF Output: la0/data_from_biu[16](=0)
+FF Output: la0/data_from_biu[17](=0)
+FF Output: la0/data_from_biu[18](=0)
+FF Output: la0/data_from_biu[19](=0)
+FF Output: la0/data_from_biu[20](=0)
+FF Output: la0/data_from_biu[21](=0)
+FF Output: la0/data_from_biu[22](=0)
+FF Output: la0/data_from_biu[23](=0)
+FF Output: la0/data_from_biu[24](=0)
+FF Output: la0/data_from_biu[25](=0)
+FF Output: la0/data_from_biu[26](=0)
+FF Output: la0/data_from_biu[27](=0)
+FF Output: la0/data_from_biu[28](=0)
+FF Output: la0/data_from_biu[29](=0)
+FF Output: la0/data_from_biu[30](=0)
+FF Output: la0/data_from_biu[31](=0)
+FF Output: la0/data_from_biu[32](=0)
+FF Output: la0/data_from_biu[33](=0)
+FF Output: la0/data_from_biu[34](=0)
+FF Output: la0/data_from_biu[35](=0)
+FF Output: la0/data_from_biu[36](=0)
+FF Output: la0/data_from_biu[37](=0)
+FF Output: la0/data_from_biu[38](=0)
+FF Output: la0/data_from_biu[39](=0)
+FF Output: la0/data_from_biu[40](=0)
+FF Output: la0/data_from_biu[41](=0)
+FF Output: la0/data_from_biu[42](=0)
+FF Output: la0/data_from_biu[43](=0)
+FF Output: la0/data_from_biu[44](=0)
+FF Output: la0/data_from_biu[45](=0)
+FF Output: la0/data_from_biu[46](=0)
+FF Output: la0/data_from_biu[47](=0)
+FF Output: la0/data_from_biu[48](=0)
+FF Output: la0/data_from_biu[49](=0)
+FF Output: la0/data_from_biu[50](=0)
+FF Output: la0/data_from_biu[51](=0)
+FF Output: la0/data_from_biu[52](=0)
+FF Output: la0/data_from_biu[53](=0)
+FF Output: la0/data_from_biu[54](=0)
+FF Output: la0/data_from_biu[55](=0)
+FF Output: la0/data_from_biu[56](=0)
+FF Output: la0/data_from_biu[57](=0)
+FF Output: la0/data_from_biu[58](=0)
+FF Output: la0/data_from_biu[59](=0)
+FF Output: la0/data_from_biu[60](=0)
+FF Output: la0/data_from_biu[61](=0)
+FF Output: la0/data_from_biu[62](=0)
+FF Output: la0/data_from_biu[63](=0)
+FF instance: la2/la_biu_inst/fifo_with_read_inst/segment_rd_pointer[11]_2~FF(unreachable)
+FF instance: la2/la_biu_inst/fifo_with_read_inst/segment_wr_pointer[11]_2~FF(unreachable)
+FF instance: la2/address_counter[26]_2~FF(unreachable)
+FF instance: la2/address_counter[27]_2~FF(unreachable)
+FF instance: la2/address_counter[28]_2~FF(unreachable)
+FF instance: la2/address_counter[29]_2~FF(unreachable)
+FF instance: la2/address_counter[30]_2~FF(unreachable)
+FF instance: la2/address_counter[31]_2~FF(unreachable)
+FF instance: la1/la_biu_inst/fifo_with_read_inst/segment_rd_pointer[11]_2~FF(unreachable)
+FF instance: la1/la_biu_inst/fifo_with_read_inst/segment_wr_pointer[11]_2~FF(unreachable)
+FF instance: la1/address_counter[26]_2~FF(unreachable)
+FF instance: la1/address_counter[27]_2~FF(unreachable)
+FF instance: la1/address_counter[28]_2~FF(unreachable)
+FF instance: la1/address_counter[29]_2~FF(unreachable)
+FF instance: la1/address_counter[30]_2~FF(unreachable)
+FF instance: la1/address_counter[31]_2~FF(unreachable)
+FF instance: la0/la_biu_inst/fifo_with_read_inst/segment_rd_pointer[11]_2~FF(unreachable)
+FF instance: la0/la_biu_inst/fifo_with_read_inst/segment_wr_pointer[11]_2~FF(unreachable)
+FF instance: la0/address_counter[26]_2~FF(unreachable)
+FF instance: la0/address_counter[27]_2~FF(unreachable)
+FF instance: la0/address_counter[28]_2~FF(unreachable)
+FF instance: la0/address_counter[29]_2~FF(unreachable)
+FF instance: la0/address_counter[30]_2~FF(unreachable)
+FF instance: la0/address_counter[31]_2~FF(unreachable)
+### ### Sequential Elements Trimming Report (end) ### ### ### 
+
+### ### Module Resource Usage Distribution Estimates (begin) ### ###
+
+**Note: some resources maybe grouped under different hierarchy due to optimization and LUT mapping
+
+Module                                                              FFs      SRLs      ADDs       LUTs    COMB4s      RAMs DSP/MULTs
+------------------------------------------------------------        ---      ----      ----       ----      ----      ---- ---------
+edb_top:edb_top                                                 2295(0)     93(0)    483(0)    3479(0)      0(0)     21(0)      0(0)
+ +la0:edb_la_top_951c341776e3486595418e84d562b23b(DATA_DE...   510(314)      1(0)   159(41)   882(364)      0(0)      1(0)      0(0)
+  +axi_crc_i:edb_adbg_crc32_951c341776e3486595418e84d562b23b     32(32)      0(0)      0(0)     38(38)      0(0)      0(0)      0(0)
+  +GEN_PROBE[0].genblk7.genblk3.trigger_cu:compare_unit_9...       8(8)      0(0)      0(0)       8(8)      0(0)      0(0)      0(0)
+  +trigger_tu:trigger_unit_951c341776e3486595418e84d562b2...       1(1)      0(0)      0(0)       1(1)      0(0)      0(0)      0(0)
+  +trigger_skipper_n:trigger_skipper_951c341776e348659541...     65(65)      0(0)    63(63)   222(222)      0(0)      0(0)      0(0)
+  +la_biu_inst:la_biu_951c341776e3486595418e84d562b23b(CA...     90(33)      1(0)     55(0)   249(147)      0(0)      1(0)      0(0)
+   +fifo_with_read_inst:fifo_with_read_951c341776e3486595...     57(57)      1(1)    55(55)    102(70)      0(0)      1(0)      0(0)
+    +transcode_write_addr:fifo_address_trancode_unit_951c...       0(0)      0(0)      0(0)     31(31)      0(0)      0(0)      0(0)
+    +simple_dual_port_ram_inst:edb_simple_dual_port_ram_9...       0(0)      0(0)      0(0)       1(1)      0(0)      1(1)      0(0)
+ +la1:edb_la_top_951c341776e3486595418e84d562b23b(NUM_PRO...   816(457)     46(0)   162(41)  1214(413)      0(0)     10(0)      0(0)
+  +axi_crc_i:edb_adbg_crc32_951c341776e3486595418e84d562b23b     32(32)      0(0)      0(0)     39(39)      0(0)      0(0)      0(0)
+  +GEN_PROBE[0].genblk7.genblk3.trigger_cu:compare_unit_9...       7(7)      0(0)      0(0)       8(8)      0(0)      0(0)      0(0)
+  +GEN_PROBE[1].genblk7.genblk3.trigger_cu:compare_unit_9...       7(7)      0(0)      0(0)       8(8)      0(0)      0(0)      0(0)
+  +GEN_PROBE[2].genblk7.genblk3.trigger_cu:compare_unit_9...       7(7)      0(0)      0(0)       8(8)      0(0)      0(0)      0(0)
+  +GEN_PROBE[3].genblk7.genblk3.trigger_cu:compare_unit_9...       7(7)      0(0)      0(0)       8(8)      0(0)      0(0)      0(0)
+  +GEN_PROBE[4].genblk7.genblk3.trigger_cu:compare_unit_9...       7(7)      0(0)      0(0)       8(8)      0(0)      0(0)      0(0)
+  +GEN_PROBE[5].genblk7.genblk3.trigger_cu:compare_unit_9...     83(83)      0(0)      0(0)   182(182)      0(0)      0(0)      0(0)
+  +GEN_PROBE[6].genblk7.genblk3.trigger_cu:compare_unit_9...       8(8)      0(0)      0(0)       8(8)      0(0)      0(0)      0(0)
+  +trigger_tu:trigger_unit_951c341776e3486595418e84d562b2...       1(1)      0(0)      0(0)     13(13)      0(0)      0(0)      0(0)
+  +trigger_skipper_n:trigger_skipper_951c341776e348659541...     65(65)      0(0)    63(63)   226(226)      0(0)      0(0)      0(0)
+  +la_biu_inst:la_biu_951c341776e3486595418e84d562b23b(CA...    135(78)     46(0)     58(0)   293(147)      0(0)     10(0)      0(0)
+   +fifo_with_read_inst:fifo_with_read_951c341776e3486595...     57(57)    46(46)    58(58)    146(68)      0(0)     10(0)      0(0)
+    +transcode_write_addr:fifo_address_trancode_unit_951c...       0(0)      0(0)      0(0)     32(32)      0(0)      0(0)      0(0)
+    +simple_dual_port_ram_inst:edb_simple_dual_port_ram_9...       0(0)      0(0)      0(0)     46(46)      0(0)    10(10)      0(0)
+ +la2:edb_la_top_951c341776e3486595418e84d562b23b_renamed...   882(474)     46(0)   162(41)  1293(448)      0(0)     10(0)      0(0)
+  +axi_crc_i:edb_adbg_crc32_951c341776e3486595418e84d562b23b     32(32)      0(0)      0(0)     37(37)      0(0)      0(0)      0(0)
+  +GEN_PROBE[0].genblk7.genblk3.trigger_cu:compare_unit_9...       7(7)      0(0)      0(0)       8(8)      0(0)      0(0)      0(0)
+  +GEN_PROBE[1].genblk7.genblk3.trigger_cu:compare_unit_9...       7(7)      0(0)      0(0)       8(8)      0(0)      0(0)      0(0)
+  +GEN_PROBE[2].genblk7.genblk3.trigger_cu:compare_unit_9...       7(7)      0(0)      0(0)       8(8)      0(0)      0(0)      0(0)
+  +GEN_PROBE[3].genblk7.genblk3.trigger_cu:compare_unit_9...       7(7)      0(0)      0(0)       8(8)      0(0)      0(0)      0(0)
+  +GEN_PROBE[4].genblk7.genblk3.trigger_cu:compare_unit_9...       7(7)      0(0)      0(0)       8(8)      0(0)      0(0)      0(0)
+  +GEN_PROBE[5].genblk7.genblk3.trigger_cu:compare_unit_9...       7(7)      0(0)      0(0)       8(8)      0(0)      0(0)      0(0)
+  +GEN_PROBE[6].genblk7.genblk3.trigger_cu:compare_unit_9...       7(7)      0(0)      0(0)       8(8)      0(0)      0(0)      0(0)
+  +GEN_PROBE[7].genblk7.genblk3.trigger_cu:compare_unit_9...       7(7)      0(0)      0(0)       8(8)      0(0)      0(0)      0(0)
+  +GEN_PROBE[8].genblk7.genblk3.trigger_cu:compare_unit_9...       7(7)      0(0)      0(0)       8(8)      0(0)      0(0)      0(0)
+  +GEN_PROBE[9].genblk7.genblk3.trigger_cu:compare_unit_9...       7(7)      0(0)      0(0)       8(8)      0(0)      0(0)      0(0)
+  +GEN_PROBE[10].genblk7.genblk3.trigger_cu:compare_unit_...       7(7)      0(0)      0(0)       8(8)      0(0)      0(0)      0(0)
+  +GEN_PROBE[11].genblk7.genblk3.trigger_cu:compare_unit_...     19(19)      0(0)      0(0)     36(36)      0(0)      0(0)      0(0)
+  +GEN_PROBE[12].genblk7.genblk3.trigger_cu:compare_unit_...     19(19)      0(0)      0(0)     37(37)      0(0)      0(0)      0(0)
+  +GEN_PROBE[13].genblk7.genblk3.trigger_cu:compare_unit_...       7(7)      0(0)      0(0)       8(8)      0(0)      0(0)      0(0)
+  +GEN_PROBE[14].genblk7.genblk3.trigger_cu:compare_unit_...       7(7)      0(0)      0(0)       8(8)      0(0)      0(0)      0(0)
+  +GEN_PROBE[15].genblk7.genblk3.trigger_cu:compare_unit_...       8(8)      0(0)      0(0)       8(8)      0(0)      0(0)      0(0)
+  +GEN_PROBE[16].genblk7.genblk3.trigger_cu:compare_unit_...     19(19)      0(0)      0(0)     36(36)      0(0)      0(0)      0(0)
+  +GEN_PROBE[17].genblk7.genblk3.trigger_cu:compare_unit_...     19(19)      0(0)      0(0)     36(36)      0(0)      0(0)      0(0)
+  +trigger_tu:trigger_unit_951c341776e3486595418e84d562b2...       1(1)      0(0)      0(0)     31(31)      0(0)      0(0)      0(0)
+  +trigger_skipper_n:trigger_skipper_951c341776e348659541...     65(65)      0(0)    63(63)   220(220)      0(0)      0(0)      0(0)
+  +la_biu_inst:la_biu_951c341776e3486595418e84d562b23b(CA...    135(78)     46(0)     58(0)   300(151)      0(0)     10(0)      0(0)
+   +fifo_with_read_inst:fifo_with_read_951c341776e3486595...     57(57)    46(46)    58(58)    149(72)      0(0)     10(0)      0(0)
+    +transcode_write_addr:fifo_address_trancode_unit_951c...       0(0)      0(0)      0(0)     31(31)      0(0)      0(0)      0(0)
+    +simple_dual_port_ram_inst:edb_simple_dual_port_ram_9...       0(0)      0(0)      0(0)     46(46)      0(0)    10(10)      0(0)
+ +debug_hub_inst:debug_hub_951c341776e3486595418e84d562b23b      87(87)      0(0)      0(0)     90(90)      0(0)      0(0)      0(0)
+
+### ### Module Resource Usage Distribution Estimates (end) ### ###
+
+
+### ### Clock Load Distribution Report (begin) ### ###
+
+     Clock      Flip-Flops      Shift-Regs    Memory PortsMultipliers/DSPs
+     -----      ----------      ----------    ----------------------------
+ bscan_TCK            1377               0               0               0
+   la2_clk             408              46              20               0
+   la1_clk             359              46              20               0
+   la0_clk             151               1               2               0
+
+### ### Clock Load Distribution Report (end) ### ###
+
+### ### Resource Summary (begin) ### ### ### 
+INPUT  PORTS    : 	106
+OUTPUT PORTS    : 	1
+
+EFX_ADD         : 	483
+EFX_LUT4        : 	3479
+   1-2  Inputs  : 	970
+   3    Inputs  : 	859
+   4    Inputs  : 	1650
+EFX_FF          : 	2295
+EFX_SRL8        : 	93
+EFX_RAM10       : 	21
+EFX_GBUFCE      : 	1
+### ### Resource Summary (end) ### ### ###
+
+Plain synthesis (without verilog dump and post-map checks) time : 12s
+Elapsed synthesis time : 13s

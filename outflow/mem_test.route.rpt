@@ -1,0 +1,40 @@
+
+Efinix FPGA Placement and Routing.
+Version: 2025.2.288.3.8 
+Date: Wed Apr 22 23:54:00 2026
+
+Copyright (C) 2013 - 2025 Efinix, Inc. All rights reserved.
+ 
+Family: Titanium 
+Device: TJ375N529
+Top-level Entity Name: mem_test
+Elapsed time for routing: 0 hours 0 minutes 34 seconds
+
+
+---------- GBUFCE Assignments (begin) ----------
+
+
++-------------------------------------------+----------+----------+
+|                 Clock Net                 | GBUFCE_X | GBUFCE_Y |
++-------------------------------------------+----------+----------+
+|                  CLK_5M                   |   232    |    1     |
+|                 axi0_ACLK                 |    1     |   485    |
+| edb_top_autodbg_inst__/bscan_TCK_buffered |    1     |   483    |
+|               gpio_clk_50m                |   234    |   964    |
+|             hdmi_tx_fast_clk              |   466    |   484    |
+|             hdmi_tx_slow_clk              |   466    |   485    |
+|                 i_fb_clk                  |   236    |   964    |
+|               i_sysclk_div2               |   233    |    1     |
+|                 mipi_clk                  |   230    |    1     |
+|          mipi_dphy_tx_FASTCLK_C           |   232    |   964    |
+|          mipi_dphy_tx_FASTCLK_D           |   233    |   964    |
+|           mipi_dphy_tx_SLOWCLK            |   235    |   964    |
+|            mipi_rx_ck0_CLKOUT             |   230    |   964    |
+|            mipi_rx_ck1_CLKOUT             |   231    |   964    |
++-------------------------------------------+----------+----------+
+
+
+----------- GBUFCE Assignments (end) ----------
+
+
+Elapsed time for Latest PnR Run: 0 hours 2 minutes 19 seconds

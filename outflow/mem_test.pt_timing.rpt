@@ -1,0 +1,239 @@
+
+Efinity Interface Designer Timing Report
+Version: 2025.2.288.3.8
+Date: 2026-04-22 23:52
+
+Copyright (C) 2013 - 2025 Efinix Inc. All rights reserved.
+
+Device: TJ375N529
+Project: mem_test
+Timing Model: I3 (final)
+
+---------- 1. PLL Timing Report (begin) ----------
+
++--------------+----------+-----------------+--------------------------+---------+-------------------+---------------------------------+---------------------------------+
+| PLL Instance | Resource | Reference Clock | Core Clock Reference Pin | FB Mode | Core Feedback Pin | PLL Compensation Delay Max (ns) | PLL Compensation Delay Min (ns) |
++--------------+----------+-----------------+--------------------------+---------+-------------------+---------------------------------+---------------------------------+
+|  lpddr4_pll  | PLL_BL0  |     external    |                          |  local  |                   |              0.000              |              0.000              |
+|  pll_inst1   | PLL_BL1  |     external    |                          |  local  |                   |              0.000              |              0.000              |
+|  pll_inst4   | PLL_BL2  |       core      |  i_fb_clk~CLKOUT~1~101   |  local  |                   |              0.000              |              0.000              |
+| MIPI_TX_PLL  | PLL_TR0  |     external    |                          |  local  |                   |              0.000              |              0.000              |
+|  pll_inst5   | PLL_TR2  |       core      | i_fb_clk~CLKOUT~463~963  |  local  |                   |              0.000              |              0.000              |
++--------------+----------+-----------------+--------------------------+---------+-------------------+---------------------------------+---------------------------------+
+
++------------------------+-------------+----------------------------+-----------------------+----------+
+|         Clock          | Period (ns) | Enable Dynamic Phase Shift | Phase Shift (degrees) | Inverted |
++------------------------+-------------+----------------------------+-----------------------+----------+
+|   pll_inst2_CLKOUT0    |    5.000    |           false            |         0.000         |  false   |
+|       axi0_ACLK        |    5.000    |           false            |         0.000         |  false   |
+|   pll_inst1_CLKOUT0    |    13.468   |           false            |         0.000         |  false   |
+|         CLK_5M         |   200.337   |           false            |         0.000         |  false   |
+|     mipi0_ref_clk      |    37.037   |           false            |         0.000         |  false   |
+|        mipi_clk        |    10.000   |           false            |         0.000         |  false   |
+|     i_sysclk_div2      |    14.286   |           false            |         0.000         |  false   |
+|        i_fb_clk        |    40.000   |           false            |         0.000         |  false   |
+| mipi_dphy_tx_FASTCLK_C |    2.000    |           false            |        180.000        |  false   |
+| mipi_dphy_tx_FASTCLK_D |    2.000    |           false            |         90.000        |  false   |
+|  mipi_dphy_tx_SLOWCLK  |    8.000    |           false            |         0.000         |  false   |
+|   pll_inst5_CLKOUT0    |    10.000   |           false            |         0.000         |  false   |
+|    hdmi_tx_slow_clk    |    40.000   |           false            |         0.000         |  false   |
+|    hdmi_tx_fast_clk    |    8.000    |           false            |         52.500        |  false   |
++------------------------+-------------+----------------------------+-----------------------+----------+
+
+---------- PLL Timing Report (end) ----------
+
+---------- 2. GPIO Timing Report (begin) ----------
+
+Non-registered GPIO Configuration:
+===================================
+
++---------------+-------------+-----------+----------+----------+
+| Instance Name |   Pin Name  | Parameter | Max (ns) | Min (ns) |
++---------------+-------------+-----------+----------+----------+
+|   clk_74p25m  |  clk_74p25m |  GPIO_IN  |  4.253   |  2.074   |
+|  ddr_clk_ref  | ddr_clk_ref |  GPIO_IN  |  4.253   |  2.074   |
+|    i_sw[0]    |   i_sw[0]   |  GPIO_IN  |  4.161   |  1.679   |
+|    i_sw[1]    |   i_sw[1]   |  GPIO_IN  |  4.161   |  1.679   |
+|   uart1_rxd   |  uart1_rxd  |  GPIO_IN  |  4.155   |  2.036   |
+|   uart2_rxd   |  uart2_rxd  |  GPIO_IN  |  4.285   |  2.045   |
+|     led[0]    |    led[0]   |  GPIO_OUT |  7.450   |  3.284   |
+|     led[1]    |    led[1]   |  GPIO_OUT |  7.450   |  3.284   |
+|     led[2]    |    led[2]   |  GPIO_OUT |  7.450   |  3.284   |
+|     led[3]    |    led[3]   |  GPIO_OUT |  7.450   |  3.284   |
+|   uart1_txd   |  uart1_txd  |  GPIO_OUT |  7.258   |  3.282   |
+|   uart2_txd   |  uart2_txd  |  GPIO_OUT |  7.450   |  3.284   |
++---------------+-------------+-----------+----------+----------+
+
+---------- GPIO Timing Report (end) ----------
+
+---------- 3. JTAG Timing Report (begin) ----------
+
++----------------------+--------------------------+-----------+----------+----------+
+|    Instance Name     |         Pin Name         | Parameter | Max (ns) | Min (ns) |
++----------------------+--------------------------+-----------+----------+----------+
+|      jtag_inst1      |      jtag_inst1_TDI      |  JTAG_IN  |  3.862   |  2.099   |
+|      jtag_inst1      |      jtag_inst1_TMS      |  JTAG_IN  |  2.910   |  1.560   |
+| jtag_inst2_autodbg__ | jtag_inst2_autodbg_TDI__ |  JTAG_IN  |  3.862   |  2.099   |
+| jtag_inst2_autodbg__ | jtag_inst2_autodbg_TMS__ |  JTAG_IN  |  2.910   |  1.560   |
++----------------------+--------------------------+-----------+----------+----------+
+
+---------- JTAG Timing Report (end) ----------
+
+---------- 4.1 HSIO GPIO Timing Report (begin) ----------
+
+Non-registered HSIO GPIO Configuration:
+========================================
+
++-----------------+-------------------+-------------+----------+----------+
+|  Instance Name  |      Pin Name     |  Parameter  | Max (ns) | Min (ns) |
++-----------------+-------------------+-------------+----------+----------+
+|     clk_25m     |      clk_25m      |   GPIO_IN   |  1.642   |  0.648   |
+|   gpio_clk_50m  |    gpio_clk_50m   | GPIO_CLK_IN |  1.426   |  0.587   |
+|     i_sw[2]     |      i_sw[2]      |   GPIO_IN   |  1.765   |  0.792   |
+|      led[4]     |       led[4]      |   GPIO_OUT  |  3.076   |  1.499   |
+|      led[5]     |       led[5]      |   GPIO_OUT  |  3.076   |  1.499   |
+|      led[6]     |       led[6]      |   GPIO_OUT  |  3.076   |  1.499   |
+|      led[7]     |       led[7]      |   GPIO_OUT  |  3.076   |  1.499   |
+|      led[8]     |       led[8]      |   GPIO_OUT  |  3.076   |  1.499   |
+|      led[9]     |       led[9]      |   GPIO_OUT  |  3.076   |  1.499   |
+|     led[10]     |      led[10]      |   GPIO_OUT  |  3.076   |  1.499   |
+|     led[11]     |      led[11]      |   GPIO_OUT  |  3.076   |  1.499   |
+|     led[12]     |      led[12]      |   GPIO_OUT  |  3.076   |  1.499   |
+|     led[13]     |      led[13]      |   GPIO_OUT  |  3.076   |  1.499   |
+|     led[14]     |      led[14]      |   GPIO_OUT  |  3.076   |  1.499   |
+|     led[15]     |      led[15]      |   GPIO_OUT  |  3.076   |  1.499   |
+|     led[16]     |      led[16]      |   GPIO_OUT  |  3.317   |  1.497   |
+|     led[17]     |      led[17]      |   GPIO_OUT  |  3.317   |  1.497   |
+|     led[18]     |      led[18]      |   GPIO_OUT  |  3.317   |  1.497   |
+|     led[19]     |      led[19]      |   GPIO_OUT  |  3.317   |  1.497   |
+| P0_lcd_power_en |  P0_lcd_power_en  |   GPIO_OUT  |  3.591   |  1.740   |
+|   P0_lcd_rstp   |    P0_lcd_rstp    |   GPIO_OUT  |  3.591   |  1.740   |
+| P1_lcd_power_en |  P1_lcd_power_en  |   GPIO_OUT  |  3.591   |  1.740   |
+|  P1_o_lcd_rstn  |   P1_o_lcd_rstn   |   GPIO_OUT  |  3.591   |  1.740   |
+|  S0_o_cam_rst_p |   S0_o_cam_rst_p  |   GPIO_OUT  |  3.862   |  1.754   |
+|  S1_o_cam_rst_p |   S1_o_cam_rst_p  |   GPIO_OUT  |  3.862   |  1.754   |
+|  S0_io_cam_scl  |  S0_io_cam_scl_IN |   GPIO_IN   |  2.251   |  0.841   |
+|  S0_io_cam_scl  | S0_io_cam_scl_OUT |   GPIO_OUT  |  3.862   |  1.754   |
+|  S0_io_cam_scl  |  S0_io_cam_scl_OE |   GPIO_OUT  |  3.572   |  1.586   |
+|  S0_io_cam_sda  |  S0_io_cam_sda_IN |   GPIO_IN   |  2.251   |  0.841   |
+|  S0_io_cam_sda  | S0_io_cam_sda_OUT |   GPIO_OUT  |  3.862   |  1.754   |
+|  S0_io_cam_sda  |  S0_io_cam_sda_OE |   GPIO_OUT  |  3.572   |  1.586   |
+|  S1_io_cam_scl  |  S1_io_cam_scl_IN |   GPIO_IN   |  2.251   |  0.841   |
+|  S1_io_cam_scl  | S1_io_cam_scl_OUT |   GPIO_OUT  |  3.862   |  1.754   |
+|  S1_io_cam_scl  |  S1_io_cam_scl_OE |   GPIO_OUT  |  3.572   |  1.586   |
+|  S1_io_cam_sda  |  S1_io_cam_sda_IN |   GPIO_IN   |  2.251   |  0.841   |
+|  S1_io_cam_sda  | S1_io_cam_sda_OUT |   GPIO_OUT  |  3.862   |  1.754   |
+|  S1_io_cam_sda  |  S1_io_cam_sda_OE |   GPIO_OUT  |  3.572   |  1.586   |
++-----------------+-------------------+-------------+----------+----------+
+
+---------- HSIO GPIO Timing Report (end) ----------
+
+---------- 4.2.1 LVDS Tx Timing Report (begin) ----------
+
+---------- LVDS Tx Timing Report (end) ----------
+
+---------- 4.2.1 MIPI RX Lane Timing Report (begin) ----------
+
++---------------+----------------------+-----------------+----------+----------+
+| Instance Name |       Pin Name       |    Parameter    | Max (ns) | Min (ns) |
++---------------+----------------------+-----------------+----------+----------+
+|  mipi_rx_ck0  | mipi_rx_ck0_LP_P_IN  | MIPI_RX_LANE_IN |  2.560   |  1.484   |
+|  mipi_rx_ck0  | mipi_rx_ck0_LP_N_IN  | MIPI_RX_LANE_IN |  2.560   |  1.484   |
+|  mipi_rx_ck1  | mipi_rx_ck1_LP_P_IN  | MIPI_RX_LANE_IN |  2.560   |  1.484   |
+|  mipi_rx_ck1  | mipi_rx_ck1_LP_N_IN  | MIPI_RX_LANE_IN |  2.560   |  1.484   |
+|  mipi_rx_dp00 | mipi_rx_dp00_LP_P_IN | MIPI_RX_LANE_IN |  3.012   |  1.746   |
+|  mipi_rx_dp00 | mipi_rx_dp00_LP_N_IN | MIPI_RX_LANE_IN |  3.012   |  1.746   |
+|  mipi_rx_dp01 | mipi_rx_dp01_LP_P_IN | MIPI_RX_LANE_IN |  3.012   |  1.746   |
+|  mipi_rx_dp01 | mipi_rx_dp01_LP_N_IN | MIPI_RX_LANE_IN |  3.012   |  1.746   |
+|  mipi_rx_dp02 | mipi_rx_dp02_LP_P_IN | MIPI_RX_LANE_IN |  3.012   |  1.746   |
+|  mipi_rx_dp02 | mipi_rx_dp02_LP_N_IN | MIPI_RX_LANE_IN |  3.012   |  1.746   |
+|  mipi_rx_dp03 | mipi_rx_dp03_LP_P_IN | MIPI_RX_LANE_IN |  3.012   |  1.746   |
+|  mipi_rx_dp03 | mipi_rx_dp03_LP_N_IN | MIPI_RX_LANE_IN |  3.012   |  1.746   |
+|  mipi_rx_dp10 | mipi_rx_dp10_LP_P_IN | MIPI_RX_LANE_IN |  3.012   |  1.746   |
+|  mipi_rx_dp10 | mipi_rx_dp10_LP_N_IN | MIPI_RX_LANE_IN |  3.012   |  1.746   |
+|  mipi_rx_dp11 | mipi_rx_dp11_LP_P_IN | MIPI_RX_LANE_IN |  3.012   |  1.746   |
+|  mipi_rx_dp11 | mipi_rx_dp11_LP_N_IN | MIPI_RX_LANE_IN |  3.012   |  1.746   |
+|  mipi_rx_dp12 | mipi_rx_dp12_LP_P_IN | MIPI_RX_LANE_IN |  3.012   |  1.746   |
+|  mipi_rx_dp12 | mipi_rx_dp12_LP_N_IN | MIPI_RX_LANE_IN |  3.012   |  1.746   |
+|  mipi_rx_dp13 | mipi_rx_dp13_LP_P_IN | MIPI_RX_LANE_IN |  3.012   |  1.746   |
+|  mipi_rx_dp13 | mipi_rx_dp13_LP_N_IN | MIPI_RX_LANE_IN |  3.012   |  1.746   |
++---------------+----------------------+-----------------+----------+----------+
+
+---------- MIPI RX Lane Timing Report (end) ----------
+
+---------- 4.2.2 MIPI TX Lane Timing Report (begin) ----------
+
++---------------+-----------------------+------------------+----------+----------+
+| Instance Name |        Pin Name       |    Parameter     | Max (ns) | Min (ns) |
++---------------+-----------------------+------------------+----------+----------+
+|  mipi_tx_ck0  |   mipi_tx_ck0_HS_OE   | MIPI_TX_LANE_OUT |  1.811   |  1.050   |
+|  mipi_tx_ck0  |  mipi_tx_ck0_LP_N_OE  | MIPI_TX_LANE_OUT |  2.415   |  1.400   |
+|  mipi_tx_ck0  |  mipi_tx_ck0_LP_P_OE  | MIPI_TX_LANE_OUT |  2.415   |  1.400   |
+|  mipi_tx_ck0  |  mipi_tx_ck0_LP_N_OUT | MIPI_TX_LANE_OUT |  2.367   |  1.372   |
+|  mipi_tx_ck0  |  mipi_tx_ck0_LP_P_OUT | MIPI_TX_LANE_OUT |  2.367   |  1.372   |
+|  mipi_tx_ck1  |   mipi_tx_ck1_HS_OE   | MIPI_TX_LANE_OUT |  1.811   |  1.050   |
+|  mipi_tx_ck1  |  mipi_tx_ck1_LP_N_OE  | MIPI_TX_LANE_OUT |  2.415   |  1.400   |
+|  mipi_tx_ck1  |  mipi_tx_ck1_LP_P_OE  | MIPI_TX_LANE_OUT |  2.415   |  1.400   |
+|  mipi_tx_ck1  |  mipi_tx_ck1_LP_N_OUT | MIPI_TX_LANE_OUT |  2.367   |  1.372   |
+|  mipi_tx_ck1  |  mipi_tx_ck1_LP_P_OUT | MIPI_TX_LANE_OUT |  2.367   |  1.372   |
+|  mipi_tx_dp00 |   mipi_tx_dp00_HS_OE  | MIPI_TX_LANE_OUT |  1.811   |  1.050   |
+|  mipi_tx_dp00 |  mipi_tx_dp00_LP_N_OE | MIPI_TX_LANE_OUT |  2.415   |  1.400   |
+|  mipi_tx_dp00 |  mipi_tx_dp00_LP_P_OE | MIPI_TX_LANE_OUT |  2.415   |  1.400   |
+|  mipi_tx_dp00 | mipi_tx_dp00_LP_N_OUT | MIPI_TX_LANE_OUT |  2.367   |  1.372   |
+|  mipi_tx_dp00 | mipi_tx_dp00_LP_P_OUT | MIPI_TX_LANE_OUT |  2.367   |  1.372   |
+|  mipi_tx_dp01 |   mipi_tx_dp01_HS_OE  | MIPI_TX_LANE_OUT |  1.811   |  1.050   |
+|  mipi_tx_dp01 |  mipi_tx_dp01_LP_N_OE | MIPI_TX_LANE_OUT |  2.415   |  1.400   |
+|  mipi_tx_dp01 |  mipi_tx_dp01_LP_P_OE | MIPI_TX_LANE_OUT |  2.415   |  1.400   |
+|  mipi_tx_dp01 | mipi_tx_dp01_LP_N_OUT | MIPI_TX_LANE_OUT |  2.367   |  1.372   |
+|  mipi_tx_dp01 | mipi_tx_dp01_LP_P_OUT | MIPI_TX_LANE_OUT |  2.367   |  1.372   |
+|  mipi_tx_dp02 |   mipi_tx_dp02_HS_OE  | MIPI_TX_LANE_OUT |  1.811   |  1.050   |
+|  mipi_tx_dp02 |  mipi_tx_dp02_LP_N_OE | MIPI_TX_LANE_OUT |  2.415   |  1.400   |
+|  mipi_tx_dp02 |  mipi_tx_dp02_LP_P_OE | MIPI_TX_LANE_OUT |  2.415   |  1.400   |
+|  mipi_tx_dp02 | mipi_tx_dp02_LP_N_OUT | MIPI_TX_LANE_OUT |  2.367   |  1.372   |
+|  mipi_tx_dp02 | mipi_tx_dp02_LP_P_OUT | MIPI_TX_LANE_OUT |  2.367   |  1.372   |
+|  mipi_tx_dp03 |   mipi_tx_dp03_HS_OE  | MIPI_TX_LANE_OUT |  1.811   |  1.050   |
+|  mipi_tx_dp03 |  mipi_tx_dp03_LP_N_OE | MIPI_TX_LANE_OUT |  2.415   |  1.400   |
+|  mipi_tx_dp03 |  mipi_tx_dp03_LP_P_OE | MIPI_TX_LANE_OUT |  2.415   |  1.400   |
+|  mipi_tx_dp03 | mipi_tx_dp03_LP_N_OUT | MIPI_TX_LANE_OUT |  2.367   |  1.372   |
+|  mipi_tx_dp03 | mipi_tx_dp03_LP_P_OUT | MIPI_TX_LANE_OUT |  2.367   |  1.372   |
+|  mipi_tx_dp10 |   mipi_tx_dp10_HS_OE  | MIPI_TX_LANE_OUT |  1.811   |  1.050   |
+|  mipi_tx_dp10 |  mipi_tx_dp10_LP_N_OE | MIPI_TX_LANE_OUT |  2.415   |  1.400   |
+|  mipi_tx_dp10 |  mipi_tx_dp10_LP_P_OE | MIPI_TX_LANE_OUT |  2.415   |  1.400   |
+|  mipi_tx_dp10 | mipi_tx_dp10_LP_N_OUT | MIPI_TX_LANE_OUT |  2.367   |  1.372   |
+|  mipi_tx_dp10 | mipi_tx_dp10_LP_P_OUT | MIPI_TX_LANE_OUT |  2.367   |  1.372   |
+|  mipi_tx_dp11 |   mipi_tx_dp11_HS_OE  | MIPI_TX_LANE_OUT |  1.811   |  1.050   |
+|  mipi_tx_dp11 |  mipi_tx_dp11_LP_N_OE | MIPI_TX_LANE_OUT |  2.415   |  1.400   |
+|  mipi_tx_dp11 |  mipi_tx_dp11_LP_P_OE | MIPI_TX_LANE_OUT |  2.415   |  1.400   |
+|  mipi_tx_dp11 | mipi_tx_dp11_LP_N_OUT | MIPI_TX_LANE_OUT |  2.367   |  1.372   |
+|  mipi_tx_dp11 | mipi_tx_dp11_LP_P_OUT | MIPI_TX_LANE_OUT |  2.367   |  1.372   |
+|  mipi_tx_dp12 |   mipi_tx_dp12_HS_OE  | MIPI_TX_LANE_OUT |  1.811   |  1.050   |
+|  mipi_tx_dp12 |  mipi_tx_dp12_LP_N_OE | MIPI_TX_LANE_OUT |  2.415   |  1.400   |
+|  mipi_tx_dp12 |  mipi_tx_dp12_LP_P_OE | MIPI_TX_LANE_OUT |  2.415   |  1.400   |
+|  mipi_tx_dp12 | mipi_tx_dp12_LP_N_OUT | MIPI_TX_LANE_OUT |  2.367   |  1.372   |
+|  mipi_tx_dp12 | mipi_tx_dp12_LP_P_OUT | MIPI_TX_LANE_OUT |  2.367   |  1.372   |
+|  mipi_tx_dp13 |   mipi_tx_dp13_HS_OE  | MIPI_TX_LANE_OUT |  1.811   |  1.050   |
+|  mipi_tx_dp13 |  mipi_tx_dp13_LP_N_OE | MIPI_TX_LANE_OUT |  2.415   |  1.400   |
+|  mipi_tx_dp13 |  mipi_tx_dp13_LP_P_OE | MIPI_TX_LANE_OUT |  2.415   |  1.400   |
+|  mipi_tx_dp13 | mipi_tx_dp13_LP_N_OUT | MIPI_TX_LANE_OUT |  2.367   |  1.372   |
+|  mipi_tx_dp13 | mipi_tx_dp13_LP_P_OUT | MIPI_TX_LANE_OUT |  2.367   |  1.372   |
++---------------+-----------------------+------------------+----------+----------+
+
+---------- MIPI TX Lane Timing Report (end) ----------
+
+---------- 5. Clock Network Delay Report (begin) ----------
+
++------------------------+----------+----------+
+|       Clock Pin        | Max (ns) | Min (ns) |
++------------------------+----------+----------+
+|       axi0_ACLK        |  2.407   |  1.360   |
+|    hdmi_tx_fast_clk    |  2.415   |  1.365   |
+|    hdmi_tx_slow_clk    |  2.415   |  1.365   |
+|        i_fb_clk        |  2.423   |  1.367   |
+| mipi_dphy_tx_FASTCLK_C |  2.423   |  1.369   |
+| mipi_dphy_tx_FASTCLK_D |  2.416   |  1.366   |
+|  mipi_dphy_tx_SLOWCLK  |  2.425   |  1.371   |
+|   mipi_rx_ck0_CLKOUT   |  2.421   |  1.368   |
+|   mipi_rx_ck1_CLKOUT   |  2.424   |  1.370   |
++------------------------+----------+----------+
+
+---------- Clock Network Delay Report (end) ----------

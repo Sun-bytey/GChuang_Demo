@@ -1,0 +1,32 @@
+[dumpfile] "C:\Users\ELITES~1\AppData\Local\Temp\tmppfsp7cto\la2tmp_continous.vcd"
+[dumpfile_mtime] "Tue Feb 17 12:54:09 2026"
+[dumpfile_size] 98311
+[savefile] "D:\Project\TJ375N529_DemoBoard\06_tj180a484s_sc431hai2lcd_demo\TJ375N529_SC431HAI2LCD_Demo_V0\la2_waveform.gtkw"
+[timestart] 0
+[size] 1000 600
+[pos] -1 -1
+*0.000000 c 1024 3072 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[signals_width] 126
+[sst_expanded] 1
+@22
+top.mipi_rx_ck0_HS_TERM
+top.mipi_rx_ck0_LP_N_IN
+top.mipi_rx_ck0_HS_ENA
+top.mipi_rx_ck0_LP_P_IN
+top.mipi_rx_dp00_FIFO_RD
+top.mipi_rx_dp00_HS_TERM
+top.mipi_rx_dp00_LP_P_IN
+top.mipi_rx_dp01_FIFO_EMPTY
+top.mipi_rx_dp01_HS_ENA
+top.mipi_rx_dp00_FIFO_EMPTY
+top.mipi_rx_dp00_LP_N_IN
+top.mipi_rx_dp00_HS_IN[7:0]
+top.mipi_rx_dp01_HS_IN[7:0]
+top.mipi_rx_dp01_HS_TERM
+top.mipi_rx_dp00_HS_ENA
+top.mipi_rx_dp01_FIFO_RD
+top.inst_efx_csi2_rx/reset_n
+top.inst_efx_csi2_rx/reset_byte_HS_n
+top.inst_efx_csi2_rx/reset_pixel_n
+top.mipi_rx_dp02_HS_IN[7:0]
+top.mipi_rx_dp03_HS_IN[7:0]

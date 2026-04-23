@@ -1,0 +1,21 @@
+[dumpfile] "C:\Users\ELITES~1\AppData\Local\Temp\tmp74v27scg\la3tmp_continous.vcd"
+[dumpfile_mtime] "Tue Feb 17 12:00:31 2026"
+[dumpfile_size] 66636
+[savefile] "D:\Project\TJ375N529_DemoBoard\06_tj180a484s_sc431hai2lcd_demo\TJ375N529_SC431HAI2LCD_Demo_V0\la3_waveform.gtkw"
+[timestart] 0
+[size] 1000 600
+[pos] -1 -1
+*0.000000 c 1024 3072 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[signals_width] 126
+[sst_expanded] 1
+@22
+top.mipi_tx_dp10_HS_OUT[7:0]
+top.mipi_tx_dp11_HS_OUT[7:0]
+top.mipi_tx_dp13_HS_OUT[7:0]
+top.mipi_tx_dp12_HS_OUT[7:0]
+top.mipi_tx_dp03_RST
+top.mipi_tx_ck0_RST
+top.mipi_tx_dp02_RST
+top.mipi_tx_ck1_RST
+top.mipi_tx_dp00_RST
+top.mipi_tx_dp01_RST
