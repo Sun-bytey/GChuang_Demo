@@ -1,6 +1,7 @@
 
 module contrast_bright_top(
 	
+	
 	input		wire				ch0_clk,
 	input		wire				rst_n,
 	input		wire	[7:0]	ch0_contrast,
