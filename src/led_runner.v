@@ -1,7 +1,7 @@
 // LED跑马灯模块
 // 支持可配置数量LED的流水灯效果
 module led_runner #(
-    parameter LED_NUM = 20,           // LED数量111
+    parameter LED_NUM = 20,           // LED数量
     parameter CLK_FREQ = 50_000_000,  // 时钟频率 (Hz)
     parameter SPEED_MS = 100          // 跑马灯速度 (毫秒)
 )(
