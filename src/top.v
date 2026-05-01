@@ -607,6 +607,12 @@ assign pll_byteclk_rstn = i_sw[0];
 
 // LED跑马灯控制 - 所有20个LED都跑马灯
 wire [19:0] led_runner_out;  // 20个LED的跑马灯输出
+wire [19:0] led_status_out;
+wire [19:0] led_color_out;
+wire [2:0]  color_id;
+wire [4:0]  color_onehot;
+wire        color_result_valid;
+wire        color_latency_ok;
 
 // 拨杆开关控制：i_sw[2]=0时运行，i_sw[2]=1时停止（按下停止）
 led_runner #(
@@ -620,11 +626,14 @@ led_runner #(
     .led_out(led_runner_out)
 );
 
+assign led_color_out = {9'd0, (color_id == 3'd0), color_id, color_onehot, color_latency_ok, color_result_valid};
+assign led_status_out = i_sw[2] ? led_color_out : led_runner_out;
+
 // LED输出：混合极性处理
 // LED12-17 (TR1/TR2, 3.3V): 共阳极，不取反
 // LED18-33 (BANK4C/4D, 1.8V): 共阴极，需要取反
-assign led[3:0] = led_runner_out[3:0];      // LED12-17: 不取反（共阳极）
-assign led[19:4] = ~led_runner_out[19:4];   // LED18-33: 取反（共阴极）
+assign led[3:0] = led_status_out[3:0];      // LED12-17: 不取反（共阳极）
+assign led[19:4] = ~led_status_out[19:4];   // LED18-33: 取反（共阴极）
 
 //============================================================
 // 双向串口转发 (115200, 8N1)
@@ -1457,6 +1466,18 @@ end
       .rgb_de_o		  (rgb1_de         ),
       .rgb_valid_o	  (rgb1_valid      ),
       .rgb_datax2_o   (rgb1_datax2     )//b,g,r,b,g,r
+  );
+
+  color_recognizer u_color_recognizer (
+    .clk          (i_sysclk_div2),
+    .rst_n        (pixel_data_en | pixel_data_en1),
+    .vs           (rgb_vs),
+    .de           (rgb_de),
+    .rgb_datax2   (rgb_datax2),
+    .color_id     (color_id),
+    .color_onehot (color_onehot),
+    .result_valid (color_result_valid),
+    .latency_ok   (color_latency_ok)
   );
 
 //============================================================================= 

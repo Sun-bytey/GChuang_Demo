@@ -59,6 +59,7 @@
         <efx:design_file name="src/vid_info_det_v7.v" version="default" library="default"/>
         <efx:design_file name="src/mipi_dsi/dsi_tx_top.v" version="default" library="default"/>
         <efx:design_file name="src/mipi_csi/soft_mipi_rx_top.v" version="default" library="default"/>
+        <efx:design_file name="src/color_recognizer.v" version="default" library="default"/>
         <efx:design_file name="src/led_runner.v" version="default" library="default"/>
         <efx:design_file name="src/uart/simple_uart.v" version="default" library="default"/>
         <efx:top_vhdl_arch name=""/>
